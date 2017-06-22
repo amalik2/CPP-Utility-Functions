@@ -4,7 +4,7 @@
 
 #include "RandomFunctions.h"
 
-// TODO: test the last 2 functions
+// TODO: test removeAtIndexUnsorted()
 namespace VectorFunctions {
 
 	// Get whether the vector contains the specified element
@@ -40,7 +40,7 @@ namespace VectorFunctions {
 	// Remove the specified element from the vector, if it exists
 	// Does not preserve sorted order
 	template<class T>
-	void removeFromUnsorted(std::vector<T> &vec, T &element) {	// TODO: T& instead of T, does it cause errors?
+	void removeFromUnsorted(std::vector<T> &vec, T &element) {
 		auto it = std::find(vec.begin(), vec.end(), element);
 
 		if (it != vec.end()) {
