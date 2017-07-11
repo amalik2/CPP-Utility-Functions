@@ -4,7 +4,6 @@
 
 #include "RandomFunctions.h"
 
-// TODO: test removeAtIndexUnsorted()
 namespace VectorFunctions {
 
 	// Get whether the vector contains the specified element
@@ -52,8 +51,8 @@ namespace VectorFunctions {
 	// Does not preserve sorted order
 	template<class T>
 	void removeAtIndexUnsorted(std::vector<T> &vec, int index) {
-		v[i] = std::move(v.back());
-		v.pop_back();
+		vec[i] = std::move(vec.back());
+		vec.pop_back();
 	}
 
 	// Preserves sorted order
