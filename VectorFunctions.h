@@ -51,7 +51,7 @@ namespace VectorFunctions {
 	// Does not preserve sorted order
 	template<class T>
 	void removeAtIndexUnsorted(std::vector<T> &vec, int index) {
-		vec[i] = std::move(vec.back());
+		vec[index] = std::move(vec.back());
 		vec.pop_back();
 	}
 
